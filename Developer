@@ -1,0 +1,15 @@
+# 这是一个计算BMI指数的Python代码示例
+
+# 定义一个函数用于计算BMI指数
+def calculate_bmi(height, weight):
+    height_m = height / 100.0 # 将厘米转换为米
+    bmi = weight / (height_m ** 2) # 计算BMI指数
+    return bmi
+
+# 提示用户输入身高和体重
+height = float(input("请输入身高（厘米）："))
+weight = float(input("请输入体重（千克）："))
+
+# 计算BMI指数并输出结果
+bmi = calculate_bmi(height, weight)
+print("您的BMI指数为：{:.2f}".format(bmi))
